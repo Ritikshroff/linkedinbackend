@@ -49,7 +49,7 @@ const port = 3000;
 // ✅ Middleware (must come before routes)
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://linkedinbackend-zxet.onrender.com/",
     credentials: true, // Optional: If you're using cookies or sessions
   })
 );
