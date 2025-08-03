@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: my-backend-api
+    runtime: node
+    repo: https://github.com/your-username/your-repo-name
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000 # or whatever your Express server uses
