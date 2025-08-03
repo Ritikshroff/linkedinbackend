@@ -49,7 +49,11 @@ const port = 3000;
 // ✅ Middleware (must come before routes)
 app.use(
   cors({
-    origin: "https://linkedinbackend-zxet.onrender.com/",
+    origin:
+      "https://linkedinbackend-zxet.onrender.com/" ||
+      "https://linedin-assingment.vercel.app/", // Allow requests from your frontend
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type,Authorization",
     credentials: true, // Optional: If you're using cookies or sessions
   })
 );
