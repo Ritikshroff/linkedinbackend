@@ -66,7 +66,7 @@ app.get("/", (req, res) => {
 });
 
 // ✅ Start Server
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   mongoose
     .connect(process.env.MONGO_URI)
     .then(() => {
